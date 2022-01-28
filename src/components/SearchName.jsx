@@ -1,3 +1,13 @@
+import { useState } from 'react'
 export const SearchName = () => {
-  return <input type="text" placeholder="Type a name..." />
+  const [searchName, setSearchName] = useState('')
+  const handleChange = (e) => {
+    setSearchName(e.target.value)
+  }
+  return (
+    <header>
+      <input onChange={handleChange} type="text" placeholder="Type a name..." value={searchName} />
+      <pre>Name: {searchName}</pre>
+    </header>
+  )
 }
