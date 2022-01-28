@@ -1,6 +1,6 @@
-import { useState, useRef, useEffect } from 'react'
-export const SearchName = () => {
-  const [searchName, setSearchName] = useState('')
+import { useRef, useEffect } from 'react'
+
+export const SearchName = ({ searchName, setSearchName }) => {
   const inputRef = useRef()
 
   useEffect(() => {

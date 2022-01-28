@@ -1,10 +1,13 @@
+import { useState } from 'react'
 import { SearchName } from './components/SearchName'
 import { NamePicker } from './components/NamePicker'
 
 function App({ names }) {
+  const [searchName, setSearchName] = useState('')
+
   return (
     <>
-      <SearchName /> <NamePicker names={names} />
+      <SearchName searchName={searchName} setSearchName={setSearchName} /> <NamePicker names={names} />
     </>
   )
 }
