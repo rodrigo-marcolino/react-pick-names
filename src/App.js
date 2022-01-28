@@ -1,8 +1,10 @@
-function App() {
+function App({ names }) {
   return (
-    <div className="App">
-      <h1>hello</h1>
-    </div>
+    <ul>
+      {names.map((entry) => (
+        <li key={entry.id} className={entry.sex}>{entry.name}</li>
+      ))}
+    </ul>
   )
 }
 

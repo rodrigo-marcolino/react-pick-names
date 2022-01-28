@@ -127,3 +127,42 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+ul {
+  padding: 0;
+}
+li {
+  position: relative;
+  list-style: none;
+  display: inline-block;
+  margin: 2px;
+  border-radius: 3px;
+}
+li:hover {
+  cursor: pointer;
+}
+li.girl {
+  background: #ffc6e5;
+  color: #940050;
+}
+li.girl:hover {
+  background: #ffadd9;
+}
+li.boy {
+  background: #a0cfee;
+  color: #16527a;
+}
+li.boy:hover {
+  background: #8bc4ea;
+}
+li > button {
+  border: none;
+  background: transparent;
+  display: block;
+  padding: 0.25rem 0.75rem;
+  color: inherit;
+}
+li > button:focus,
+li > button:active {
+  outline: none;
+}

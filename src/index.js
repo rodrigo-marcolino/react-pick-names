@@ -6,7 +6,7 @@ import { names } from './data/index'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App names={names} />
   </React.StrictMode>,
   document.getElementById('root')
 )
