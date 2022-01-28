@@ -1,7 +1,8 @@
-export const NamePicker = ({ names }) => {
+export const NamePicker = ({ names, searchName }) => {
+  const filteredNames = names.filter((entry) => entry.name.toLowerCase().includes(searchName.toLowerCase()))
   return (
     <ul>
-      {names.map((entry) => (
+      {filteredNames.map((entry) => (
         <li key={entry.id} className={entry.sex}>
           <button>{entry.name}</button>
         </li>

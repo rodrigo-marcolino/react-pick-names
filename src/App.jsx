@@ -7,7 +7,8 @@ function App({ names }) {
 
   return (
     <>
-      <SearchName searchName={searchName} setSearchName={setSearchName} /> <NamePicker names={names} />
+      <SearchName searchName={searchName} setSearchName={setSearchName} />{' '}
+      <NamePicker searchName={searchName} names={names} />
     </>
   )
 }
